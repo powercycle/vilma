@@ -82,12 +82,12 @@ abstract class Vilma_MailboxDriver
         $config = $injector->get('VilmaConfig');
 
         if (is_null($driver)) {
-            $driver = $config->get('mailboxes.driver'];
+            $driver = $config->get('mailboxes.driver']);
         }
         $driver = Horde_String::ucfirst(basename($driver));
 
         if (is_null($params)) {
-            $params = $config->get('mailboxes.params'];
+            $params = $config->get('mailboxes.params']);
         }
 
         $class = 'Vilma_MailboxDriver_' . $driver;
