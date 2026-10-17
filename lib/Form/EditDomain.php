@@ -32,7 +32,7 @@ class Vilma_Form_EditDomain extends Horde_Form
         $this->setButtons(true, true);
         $this->addHidden('', 'domain_id', 'text', false);
         $this->addVariable(_("Domain"), 'name', 'text', true);
-        $this->addVariable(_("Transport"), 'transport', 'enum', false, false, null, array(Horde_Array::valuesToKeys($config->get('mta.transports']))));
+        $this->addVariable(_("Transport"), 'transport', 'enum', false, false, null, array(Horde_Array::valuesToKeys($config->get('mta.transports'))));
         $this->addVariable(_("Max users"), 'max_users', 'int', false);
         $this->addVariable(_("Quota"), 'quota', 'int', false, false, _("Value in MB"));
     }
